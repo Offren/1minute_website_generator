@@ -1,0 +1,25 @@
+baseURL = 'https://${customDomain || `${repoName}.github.io`}/'
+languageCode = 'en-us'
+title = '${websiteName}'
+theme = 'up-business-theme'
+
+[params]
+  mainColor = '${colorScheme}'
+  customCSS = ['css/custom.css']
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Privacy Policy"
+    url = "/privacy-policy/"
+    weight = 2
+  [[menu.main]]
+    name = "Terms and Conditions"
+    url = "/terms-and-conditions/"
+    weight = 3
